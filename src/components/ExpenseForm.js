@@ -1,7 +1,6 @@
 import React from 'react'
 import moment from 'moment'
 import { SingleDatePicker } from 'react-dates';
-import 'react-dates/lib/css/_datepicker.css'
 
 // const date = new Date(); 
 const now = moment();
@@ -62,8 +61,8 @@ export default class ExpenseForm extends React.Component {
         }
     };
 
-    onFocusChange = ({focused}) => {
-        this.setState(() => ({calFocused: focused}));
+    onFocusChange = ({ focused }) => {
+        this.setState(() => ({ calFocused: focused }));
     };
 
     render() {
